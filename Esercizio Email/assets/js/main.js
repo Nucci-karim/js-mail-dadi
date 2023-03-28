@@ -4,18 +4,16 @@ let emailUser = prompt("Scrivi la tua email")
 
 const emailConcesse = ["sonopaolo@gmail.com", "nuovamail@email.com", "lamiamail@mail.com"]
 
-if(emailUser == emailConcesse[0]){
+let soldatino = false
 
-    document.getElementById('frase').innerHTML = `Congratulazioni puoi continuare la tua navigazione`
-
-} else if(emailUser == emailConcesse[1]){
-
-    document.getElementById('frase').innerHTML = `Congratulazioni puoi continuare la tua navigazione`
-
-} else if(emailUser == emailConcesse[2]){
-
-    document.getElementById('frase').innerHTML = `Congratulazioni puoi continuare la tua navigazione`
+for(let i = 0; i < emailConcesse.length; i++){
+    if( emailConcesse[i] == emailUser){
+        soldatino = true
+    }
 }
- else{
-    document.getElementById('frase').innerHTML = `Mi dispiace ma non puoi continuare la tua navigazione`
+
+if(soldatino = true){
+    document.writeln("L'email è presente, buona navigazione")
+} else {
+    document.writeln("L'email non è presente, registrati")
 }
